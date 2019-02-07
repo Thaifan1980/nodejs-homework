@@ -1,0 +1,34 @@
+{
+  "tasks": [
+    {
+      "id": 0,
+      "name": "Kupić mleko",
+      "status": "done",
+      "category": "Kupić"
+    },
+    {
+      "id": 1,
+      "name": "Zajechać do mechanika",
+      "status": "done",
+      "category": "Zajechać"
+    },
+    {
+      "id": 2,
+      "name": "Podjechać do lekarza",
+      "status": "activ",
+      "category": "Podjechać"
+    },
+    {
+      "id": 3,
+      "name": "Podjechać do lakiernika",
+      "status": "activ",
+      "category": "Podjechać"
+    },
+    {
+      "id": 4,
+      "name": "Podjechać do mechanika",
+      "status": "activ",
+      "category": "Podjechać"
+    }
+  ]
+}
