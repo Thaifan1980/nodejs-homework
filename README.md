@@ -15,8 +15,9 @@ Change task status
 > node app.js changeStatus --id 2
 
 Filter by status(active/done) or category
-> node app.js filer --status "active"
-> node app.js filer --category "Kupić"
+> node app.js filter --status "active"
+
+> node app.js filter --category "Kupić"
 
 Upload data to server
 > node app.js upload
