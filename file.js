@@ -22,7 +22,7 @@ function saveList(content) {
 
   try {
     const response = writeFileSync(
-      "./task.json",
+      "./tasks.json",
       JSON.stringify(content),
       "utf8"
     );
