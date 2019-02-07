@@ -23,9 +23,9 @@ const addTaskCommand = {
         category: category
       });
       await saveList(taskList);
-      console.log(taskList);
+      console.log("Done");
     } catch {
-      console.log("Barkuje nazwy zadania");
+      console.log("Podaj nazwę zadania");
     }
   }
 };
@@ -43,9 +43,9 @@ const removeTaskCommand = {
           taskList[i].id = i;
         }
         await saveList(taskList);
-        console.log(taskList);
+        console.log("Done");
       } else {
-        console.log("Podane ID poza zakresem");
+        console.log("Podane ID znajduje się po poza zakresem");
       }
     } catch {
       console.log("Barkuje id zadania lub podałeś niewłaściwy identyfikator");
@@ -66,7 +66,7 @@ const changeStatusCommand = {
         taskList[args.id].status = "done";
       }
       await saveList(taskList);
-      console.log(taskList);
+      console.log("Done");
     } catch {
       console.log("Niewłaściwy identyfikator");
     }

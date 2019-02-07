@@ -1,11 +1,10 @@
-function readList() {
-  const { readFileSync } = require("fs");
-  let tasks;
+const { readFileSync, writeFileSync } = require("fs");
 
+function readList() {
   try {
-    response = readFileSync("./tasks.json", "utf8");
+    const response = readFileSync("./tasks.json", "utf8");
     try {
-      tasks = JSON.parse(response);
+      return JSON.parse(response);
     } catch (error) {
       console.log(error.message);
     }
@@ -13,20 +12,11 @@ function readList() {
     console.log(error.message);
     throw error;
   }
-
-  return tasks;
 }
 
 function saveList(content) {
-  const { writeFileSync } = require("fs");
-
   try {
-    const response = writeFileSync(
-      "./tasks.json",
-      JSON.stringify(content),
-      "utf8"
-    );
-    return response;
+    writeFileSync("./tasks.json", JSON.stringify(content), "utf8");
   } catch (error) {
     console.log(error.message);
     throw error;

@@ -17,8 +17,8 @@ const downloadCommand = {
   handler: async () => {
     const downloadResult = await downloadTasks();
     console.log(downloadResult);
-    const taskList = await saveList(downloadResult);
-    console.log(taskList);
+    await saveList(downloadResult);
+    console.log("Done");
   }
 };
 
